@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ea580c" />
+
+    <title>Barbell Plate Calculator — what plates to load</title>
+    <meta
+      name="description"
+      content="Enter the weight you want on the barbell and see which plates to put on each side, heaviest first. Kilograms or pounds, choose your bar, and set which plates you own if your gym is short. Runs in your browser, no sign-up."
+    />
+    <link rel="canonical" href="https://plate-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Barbell Plate Calculator" />
+    <meta property="og:description" content="What plates go on each side of the bar for any target weight. kg or lb, choose the bar, limit to the plates you own. Free, no sign-up." />
+    <meta property="og:url" content="https://plate-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://plate-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Barbell Plate Calculator" />
+    <meta name="twitter:description" content="What plates go on each side of the bar for any target weight. kg or lb, choose the bar, limit to the plates you own." />
+    <meta name="twitter:image" content="https://plate-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Barbell Plate Calculator",
+        "url": "https://plate-calculator.correia95.workers.dev/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Calculate which plates to load on each side of a barbell for a target total weight, in kilograms or pounds, with a limited-plate-set mode, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I work out what plates to put on a barbell?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subtract the bar weight from your target, halve it, and load that per side starting with the heaviest plate. For 100 kg on a 20 kg bar that is 40 kg per side: a 25 and a 15."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a barbell weigh?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard men's Olympic barbell is 20 kg (about 45 lb) and a women's Olympic barbell is 15 kg (about 35 lb). Training and technique bars are lighter. Pick the right one in the calculator."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the colours of weight plates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The IWF colour scheme is red for 25 kg, blue for 20, yellow for 15, green for 10 and white for 5. Smaller change plates repeat the colours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I can't make the exact weight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Turn on the limited-plate mode and enter how many of each plate you have. If you land under the target the calculator shows by how much. Fractional plates of 0.5 or 1.25 kg are how people make small increases."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This barbell plate calculator needs JavaScript. Enter a target weight and it shows which
+        plates to load on each side of the bar, in kilograms or pounds.
+      </p>
+    </noscript>
+  </body>
+</html>
